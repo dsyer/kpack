@@ -12,7 +12,10 @@ import (
 	"github.com/pivotal/kpack/pkg/registry"
 )
 
-const BuilderMetadataLabel = "io.buildpacks.builder.metadata"
+const (
+	BuilderMetadataLabel = "io.buildpacks.builder.metadata"
+	StackLabel           = "io.buildpacks.stack.id"
+)
 
 type BuildpackMetadata struct {
 	ID      string `json:"id"`
